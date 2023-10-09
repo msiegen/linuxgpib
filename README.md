@@ -4,8 +4,8 @@
 
 The `linuxgpib` package provides an idiomatic Go interface to the
 [Linux GPIB](https://linux-gpib.sourceforge.io/) C library. It's handy if you
-have vintage electronics test equipment on a
-[GPIB](https://en.wikipedia.org/wiki/IEEE-488)
+have vintage electronics test equipment on an
+[IEEE-488](https://en.wikipedia.org/wiki/IEEE-488)
 bus and want to control it or perform data acquisition using the
 [Go language](https://go.dev/).
 
@@ -16,7 +16,7 @@ instruments. A simple transaction to read the identity of a
 [SCPI](https://en.wikipedia.org/wiki/Standard_Commands_for_Programmable_Instruments)
 device at address 22 looks like:
 
-```
+```go
 d, err := linuxgpib.NewDevice(0, 22)
 _, err = fmt.Fprintln(d, "*IDN?")
 result, err := bufio.NewReader(d).ReadString('\n')
