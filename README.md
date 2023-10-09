@@ -53,5 +53,11 @@ You'll also need to
 [configure a board](https://linux-gpib.sourceforge.io/doc_html/configuration.html)
 and pass its minor number (aka index) to the linuxgpib Go code.
 
+In certain scenarios the dynamic link loader may fail to find libgpib.so.0. If
+that happens to you, give it an extra hint with an environment variable to the
+path where you installed the userspace C library:
+
+- `LD_LIBRARY_PATH=/usr/local/lib`
+
 ## Notes
 This is not an officially supported Google product.
