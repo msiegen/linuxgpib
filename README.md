@@ -1,5 +1,3 @@
-[![Go Reference](https://pkg.go.dev/badge/github.com/msiegen/linuxgpib.svg)](https://pkg.go.dev/github.com/msiegen/linuxgpib)
-
 # Go Library for Linux GPIB
 
 The `linuxgpib` package provides an idiomatic Go interface to the
@@ -10,6 +8,8 @@ bus and want to control it or perform data acquisition using the
 [Go language](https://go.dev/).
 
 ## Usage
+
+[![Go Reference](https://pkg.go.dev/badge/github.com/msiegen/linuxgpib.svg)](https://pkg.go.dev/github.com/msiegen/linuxgpib)
 
 You can use Go's standard Reader and Writer interfaces to communicate with
 instruments. A simple transaction to read the identity of a
